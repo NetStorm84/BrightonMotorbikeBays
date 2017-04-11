@@ -10,3 +10,8 @@ I will be adding the desired features as and when I get time. Please feel free t
 
 - Show an image of the bike bay
 - Display a lock icon to show if the bay has a bike lock
+
+Current application is availiable at the below URL
+<a href="http://brightonbikebays.sussexcoder.co.uk">brightonbikebays.sussexcoder.co.uk</a>
+
+<strong>Please Note: The database does not currently contain all bike bays in Brighton, this is being updated as and when I have the time.</strong>
