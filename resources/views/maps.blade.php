@@ -32,6 +32,7 @@
           };
           bays.push(bay);
         @endforeach
+        
       </script>
       <script type="text/javascript" src="{{ URL::asset('js/map.js') }}"></script>
       <script async defer
