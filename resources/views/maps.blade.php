@@ -13,6 +13,7 @@
     <body>
 
       <div id="map"></div>
+      <div class="link">Contribute at <a href="https://github.com/NetStorm84/BrightonMotorbikeBays">GitHub</a></div>
       <script>
 
         var bays = [];
@@ -32,7 +33,7 @@
           };
           bays.push(bay);
         @endforeach
-        
+
       </script>
       <script type="text/javascript" src="{{ URL::asset('js/map.js') }}"></script>
       <script async defer
