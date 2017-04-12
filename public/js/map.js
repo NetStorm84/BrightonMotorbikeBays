@@ -86,9 +86,10 @@ function initMap() {
 
   bays.forEach(function(bay){
     var pos = {lat: parseFloat(bay['latitude']), lng: parseFloat(bay['longitude'])};
+    var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3><br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>';
 
     var infowindow = new google.maps.InfoWindow({
-      content: bay['streetname']
+      content: content
     });
 
     var marker = new google.maps.Marker({

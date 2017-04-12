@@ -18,6 +18,7 @@ class CreateBikeBays extends Migration
             $table->float('latitude');
             $table->float('longitude');
             $table->string('street_name');
+            $table->string('image_path');
         });
     }
 

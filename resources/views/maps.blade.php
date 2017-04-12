@@ -27,7 +27,8 @@
           bay = {
             streetname:"{{ $bay->street_name }}",
             latitude:"{{ $bay->latitude }}",
-            longitude:"{{ $bay->longitude }}"
+            longitude:"{{ $bay->longitude }}",
+            image:"{{ empty($bay->image_path) ? "" : '/images/' . $bay->image_path }}"
           };
           bays.push(bay);
         @endforeach

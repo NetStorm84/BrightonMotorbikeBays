@@ -27,10 +27,10 @@ class MapController extends Controller
       $minLat = 91;
 
       foreach ($bays as $bay) {
-        $maxLng = $bay->longitude > $maxLng? $bay->longitude: $maxLng;
-        $maxLat = $bay->latitude > $maxLat? $bay->latitude: $maxLat;
-        $minLng = $bay->longitude < $minLng? $bay->longitude: $minLng;
-        $minLat = $bay->latitude < $minLat? $bay->latitude: $minLat;
+        $maxLng = $bay->longitude != "" ? $bay->longitude > $maxLng? $bay->longitude: $maxLng: $maxLng;
+        $maxLat = $bay->latitude != "" ? $bay->latitude > $maxLat? $bay->latitude: $maxLat: $maxLat;
+        $minLng = $bay->longitude != "" ? $bay->longitude < $minLng? $bay->longitude: $minLng: $maxLng;
+        $minLat = $bay->latitude != "" ? $bay->latitude < $minLat? $bay->latitude: $minLat : $maxLat;
       }
 
       return compact("maxLat", "maxLng", "minLat", "minLng");
