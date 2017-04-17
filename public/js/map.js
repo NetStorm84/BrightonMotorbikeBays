@@ -1,4 +1,5 @@
 
+
 function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -89,12 +90,16 @@ function initMap() {
     var secure = bay['secure'] == true ? 'This parking bay has secure locking points':'There are no secure locking points at this parking bay';
     var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3>'+secure+'<br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>'+secure;
 
+    var secureImage = 'images/map-marker-secure.png';
+    var nonSecureImage = 'images/map-marker.png';
+
     var infowindow = new google.maps.InfoWindow({
       content: content
     });
 
     var marker = new google.maps.Marker({
       position: pos,
+      icon: bay['secure']==true?secureImage:nonSecureImage,
       map: map
     });
 

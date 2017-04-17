@@ -36,9 +36,9 @@
         @endforeach
 
       </script>
-      <script type="text/javascript" src="{{ URL::asset('js/map.js') }}"></script>
-      <script async defer
+      <script async defe
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN6WsRsmwEByiOdHOgQY0u9nW75KqPrOc&callback=initMap">
       </script>
+      <script type="text/javascript" src="{{ URL::asset('js/map.js') }}"></script>
     </body>
 </html>
