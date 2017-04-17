@@ -86,7 +86,8 @@ function initMap() {
 
   bays.forEach(function(bay){
     var pos = {lat: parseFloat(bay['latitude']), lng: parseFloat(bay['longitude'])};
-    var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3><br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>';
+    var secure = bay['secure'] == true ? 'This parking bay has secure locking points':'There are no secure locking points at this parking bay';
+    var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3>'+secure+'<br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>'+secure;
 
     var infowindow = new google.maps.InfoWindow({
       content: content
@@ -103,5 +104,4 @@ function initMap() {
   });
 
   map.fitBounds(bounds);
-  console.log(bounds);
 }
