@@ -3,6 +3,7 @@
 function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
+    minZoom: 13,
     styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -87,7 +88,7 @@ function initMap() {
 
   bays.forEach(function(bay){
     var pos = {lat: parseFloat(bay['latitude']), lng: parseFloat(bay['longitude'])};
-    var secure = bay['secure'] == true ? 'This parking bay has secure locking points':'There are no secure locking points at this parking bay';
+    var secure = bay['secure'] == true ? '<p>This parking bay has secure locking points</p>':'<p>There are no secure locking points at this parking bay</p>';
     var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3>'+secure+'<br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>'+secure;
 
     var secureImage = 'images/map-marker-secure.png';

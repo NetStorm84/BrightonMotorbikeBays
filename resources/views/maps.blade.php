@@ -11,11 +11,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
+        <link rel="stylesheet" href="{{ URL::asset('vendor/bootstrap/css/bootstrap.css') }}" />
     </head>
     <body>
 
       <div id="map"></div>
-      <div class="link">Contribute at <a href="https://github.com/NetStorm84/BrightonMotorbikeBays">GitHub</a></div>
+      <div class="link">Brighton & Hove Motorcyle Parking Bays | <small>Contribute at <a href="https://github.com/NetStorm84/BrightonMotorbikeBays">GitHub</a></small></div>
       <script>
 
         var bays = [];
