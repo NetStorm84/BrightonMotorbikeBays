@@ -32,7 +32,7 @@
             streetname:"{{ $bay->street_name }}",
             latitude:"{{ $bay->latitude }}",
             longitude:"{{ $bay->longitude }}",
-            image:"{{ empty($bay->image_path) ? "https://maps.googleapis.com/maps/api/streetview?size=400x200&location=" . $bay->latitude . "," . $bay->longitude . "&fov=200&heading=235&pitch=-10&key=AIzaSyBXc6JH3MWTaI7mLHU_lZjJmhxPgKokmp8" : '/images/' . $bay->image_path }}",
+            image:"{{ empty($bay->image_path) ? "https://maps.googleapis.com/maps/api/streetview?size=400x200&location=" . $bay->latitude . "," . $bay->longitude . "&fov=200&pitch=-12&key=AIzaSyBXc6JH3MWTaI7mLHU_lZjJmhxPgKokmp8" : '/images/' . $bay->image_path }}",
             secure: Boolean({{ $bay->secure }})
           };
           bays.push(bay);
