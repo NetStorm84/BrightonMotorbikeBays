@@ -89,10 +89,20 @@ function initMap() {
   bays.forEach(function(bay){
     var pos = {lat: parseFloat(bay['latitude']), lng: parseFloat(bay['longitude'])};
     var secure = bay['secure'] == true ? '<p>This parking bay has secure locking points</p>':'<p>There are no secure locking points at this parking bay</p>';
-    var content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3>'+secure+'<br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>'+secure;
+    var content;
+    var bayType = bay.type;
+
+    if (bayType == 1){
+      //Push bike
+      content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3><p>Brighton push bike hub</p><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3><p>Brighton push bike hub</p>';
+    }else{
+      //Motorbike
+      content = bay.image != "" ? '<h3>' + bay['streetname'] + '</h3>'+secure+'<br><img src="'+bay.image+'" height="200" width="400"></img>' : '<h3>' + bay['streetname'] + '</h3>'+secure;
+    }
 
     var secureImage = 'images/map-marker-secure.png';
     var nonSecureImage = 'images/map-marker.png';
+    var pushBikeImage = 'images/push_bike_icon.png';
 
     var infowindow = new google.maps.InfoWindow({
       content: content
@@ -100,7 +110,7 @@ function initMap() {
 
     var marker = new google.maps.Marker({
       position: pos,
-      icon: bay['secure']==true?secureImage:nonSecureImage,
+      icon: bay.type==2?bay.secure==true?secureImage:nonSecureImage:pushBikeImage,
       map: map
     });
 
