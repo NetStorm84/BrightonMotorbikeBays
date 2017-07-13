@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="brighton, motorbike bays, parking bays, motorbike parking, brighton cycle hubs, bicycle hubs, bike share">
         <meta name="description" content="Brighton and Hove City motorcycle parking bay & Cycle hub locations">
+        
         <meta name="og:title" content="Brighton motorbike bays & cycle hubs">
         <meta name="og:type" content="website">
         <meta name="og:url" content="http://brightonbikebays.sussexcoder.co.uk">
