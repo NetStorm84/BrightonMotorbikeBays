@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="brighton, motorbike bays, parking bays, motorbike parking">
-        <meta name="description" content="Brighton and Hove City motorcycle parking bay locations">
+        <meta name="keywords" content="brighton, motorbike bays, parking bays, motorbike parking, brighton cycle hubs, bicycle hubs, bike share">
+        <meta name="description" content="Brighton and Hove City motorcycle parking bay & Cycle hub locations">
 
-        <title>Brighton Motorbike Bays</title>
+        <title>Brighton Motorbike Bays & Cycle Hubs</title>
 
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" />
