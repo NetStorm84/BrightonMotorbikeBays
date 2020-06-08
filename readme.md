@@ -9,6 +9,6 @@ I will be adding the desired features as and when I get time. Please feel free t
 - Different icon depending if the bay has secure locking points
 
 Current application is availiable at the below URL
-<a href="http://brightonbikebays.sussexcoder.co.uk">brightonbikebays.sussexcoder.co.uk</a>
+<a href="http://brightonbikebays.magenificent.com">brightonbikebays.magenificent.com</a>
 
 <strong>Please Note: The database does not currently contain all bike bays in Brighton, this is being updated as and when I have the time.</strong>
