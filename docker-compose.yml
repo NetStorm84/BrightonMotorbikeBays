@@ -1,0 +1,25 @@
+version: '3'
+services:
+    web:
+        image: webdevops/php-apache-dev:7.3
+        restart: always
+        user: application
+        environment:
+          - WEB_ALIAS_DOMAIN=brigthonbikebays.local
+          - WEB_DOCUMENT_ROOT=/app/public
+          - PHP_DATE_TIMEZONE=GMT
+          - PHP_DISPLAY_ERRORS=1
+          - PHP_MEMORY_LIMIT=2048M
+          - PHP_MAX_EXECUTION_TIME=300
+          - PHP_POST_MAX_SIZE=500M
+          - PHP_UPLOAD_MAX_FILESIZE=2G
+          - XDEBUG_REMOTE_AUTOSTART=1
+          - XDEBUG_REMOTE_CONNECT_BACK=0
+          - XDEBUG_REMOTE_HOST=172.17.0.1
+        volumes:
+          - "./:/app:cached"
+        ports:
+          - "80:80"
+          - "443:443"
+          - "32823:22"
+
