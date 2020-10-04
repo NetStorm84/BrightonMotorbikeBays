@@ -3,6 +3,8 @@ services:
     web:
         image: webdevops/php-apache-dev:7.3
         restart: always
+        container_name: brigthonbikebays
+        working_dir: /app
         user: application
         environment:
           - WEB_ALIAS_DOMAIN=brigthonbikebays.local
