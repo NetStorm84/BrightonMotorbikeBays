@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
     <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('images/favicons/favicon-32x32.png') }}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ asset('images/favicons/favicon-16x16.png') }}" sizes="16x16">
+        <link rel="icon" type="image/png" href="{{ asset('images/favicons/favicon.ico') }}"/>
+        
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +16,7 @@
         <meta name="og:type" content="website">
         <meta name="og:url" content="http://brightonbikebays.maenificent.com">
         <meta name="og:image" content="images/brighton-motorbikes.jpg">
+
 
         <title>Brighton Motorbike Bays & Cycle Hubs</title>
 
