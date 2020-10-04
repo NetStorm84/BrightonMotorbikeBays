@@ -17,7 +17,7 @@ If you would like to contribute to this project, please follow the below steps t
 - run `cp .env.example .env` to create the environment file
 - Log in to the docker containing by running `docker exec -it brigthonbikebays bash`
 - run `php artisan key:generate` to generate auth keys
-- navigate to brightonbikebays.local to view the site locally
+- navigate to http://brightonbikebays.local to view the site locally
 
 ## Database
 The Bike Bays are stored in a SQLite database that took me a long time to gather the data for, if you use this data for any other project please attribute the copyright to me.
